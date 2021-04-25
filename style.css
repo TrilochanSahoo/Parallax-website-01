@@ -12,6 +12,7 @@ body{
     height: 100vh;
 }
 
+
 div:nth-child(1){
     background-position-y: 0;
     background: url(images/img2.jpg) no-repeat ;
@@ -27,7 +28,7 @@ div:nth-child(3){
 
 div:nth-child(5){
     height: 450px;
-    background: url(images/john-fowler-03Pv2Ikm5Hk-unsplash.jpg) no-repeat ;
+    background: url(images/daniel-olah-6KQETG8J-zI-unsplash.jpg) no-repeat ;
     /* background-attachment: fixed; */
     background-size: cover;
 }
@@ -56,5 +57,46 @@ div:nth-child(6){
     }
     div:nth-child(5){
         height: 700px;
+    }
+}
+
+.heading{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    font-size: 50px;
+    margin-bottom: -1rem;
+    position: relative;
+    animation: textfirst 3s 1;
+    background: rgb(255, 255, 255);
+}
+.text2{
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 2.5rem;
+    font-size: 20px;
+    /* animation: textsecond 6s; */
+    /* animation-delay: 3s; */
+
+
+}
+
+@keyframes textfirst{
+    0%{
+        color: rgb(255, 255, 255);
+        margin-bottom: -5rem;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -5rem;
+    }
+    85%{
+        letter-spacing: 5px;
+        margin-bottom: -5rem;
     }
 }
