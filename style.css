@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body{
     border: 0;
     margin: 0;
@@ -34,17 +35,17 @@ div:nth-child(5){
 }
 
 div:nth-child(2){
-    background: rgba(12, 190, 190, 0.685);
-    background-size: cover;
+    background: rgb(0, 0, 0);
+    /* background-size: cover; */
 }
 
 div:nth-child(4){
     background: rgb(22, 22, 22);
-    background-size: cover;
+    /* background-size: cover; */
 }
 div:nth-child(6){
     background: rgb(226, 226, 226);
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 #bw{
@@ -71,6 +72,8 @@ div:nth-child(6){
 
 .text1{
     font-size: 50px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
     margin-bottom: -1rem;
     position: relative;
     animation: textfirst 3s 1;
@@ -99,4 +102,36 @@ div:nth-child(6){
         letter-spacing: 5px;
         margin-bottom: -5rem;
     }
+}
+
+.description{
+    color: white;
+    margin: 2rem auto;
+    padding: 0 10rem;
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+}
+
+img{
+    height: 100vh;
+}
+
+.align-left{
+    float: left;
+    margin-right: 10rem;
+}
+
+.slide-in{
+    opacity: 0;
+    transition:all .5s;
+}
+
+.align-left.slide-in{
+    transform: translateX(-30%) scale(0.9);
+}
+
+.slide-in.active{
+    opacity: 1;
+    transform: translateX(0%) scale(1);
 }
