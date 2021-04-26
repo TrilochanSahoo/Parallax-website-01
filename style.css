@@ -3,6 +3,7 @@ body{
     border: 0;
     margin: 0;
     padding: 0;
+    background: #000000;
 }
 
 .container{
@@ -12,7 +13,6 @@ body{
     width: 100%;
     height: 100vh;
 }
-
 
 div:nth-child(1){
     background-position-y: 0;
@@ -30,39 +30,28 @@ div:nth-child(3){
 div:nth-child(5){
     height: 450px;
     background: url(images/daniel-olah-6KQETG8J-zI-unsplash.jpg) no-repeat ;
-    /* background-attachment: fixed; */
     background-size: cover;
 }
 
 div:nth-child(2){
     background: rgb(0, 0, 0);
-    /* background-size: cover; */
 }
 
 div:nth-child(4){
     background: rgb(22, 22, 22);
-    /* background-size: cover; */
 }
 div:nth-child(6){
-    background: rgb(226, 226, 226);
-    /* background-size: cover; */
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
 }
 
 #bw{
     filter: grayscale(100%) ;
 }
 
-@media screen and (max-width: 1000px) {
-    div:nth-child(3){
-        height: 700px;
-    }
-    div:nth-child(5){
-        height: 700px;
-    }
-}
-
 .heading{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0);
@@ -74,24 +63,26 @@ div:nth-child(6){
     font-size: 50px;
     font-family: 'EB Garamond', serif;
     font-weight: 600;
+    letter-spacing: 8px;
     margin-bottom: -1rem;
     position: relative;
     animation: textfirst 3s 1;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    padding: 0 1rem;
 }
 .text2{
-    color: rgb(255, 255, 255);
-    padding: 0.5rem 2.5rem;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 5rem;
+    font-weight: 600;
     font-size: 20px;
     /* animation: textsecond 6s; */
     /* animation-delay: 3s; */
-
 
 }
 
 @keyframes textfirst{
     0%{
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         margin-bottom: -5rem;
     }
     30%{
@@ -99,7 +90,7 @@ div:nth-child(6){
         margin-bottom: -5rem;
     }
     85%{
-        letter-spacing: 5px;
+        letter-spacing: 9px;
         margin-bottom: -5rem;
     }
 }
@@ -113,25 +104,46 @@ div:nth-child(6){
     text-align: justify;
 }
 
-img{
-    height: 100vh;
+.img1{
+    margin: auto 20px auto 10rem;
 }
 
 .align-left{
+    height: 80vh;
     float: left;
-    margin-right: 10rem;
+}
+
+.align-right{
+    float: right;
 }
 
 .slide-in{
     opacity: 0;
-    transition:all .5s;
+    transition:all .7s;
+}
+
+.align-right.slide-in{
+    transform: translateX(50%) scale(0.8);
 }
 
 .align-left.slide-in{
-    transform: translateX(-30%) scale(0.9);
+    transform: translateX(-50%) scale(0.8);
 }
 
 .slide-in.active{
     opacity: 1;
     transform: translateX(0%) scale(1);
+}
+
+.p2{
+    margin-top: 4rem;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+.img2{
+    height: 40vh;
+    width: 18rem;
+    margin: 3rem;
 }
